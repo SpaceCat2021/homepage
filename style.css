@@ -7,3 +7,151 @@
 .headerContent {
   
 }
+
+#mainContent {
+  overflow-x: scroll;
+  height: calc(100vh - 30px);
+}
+#about, #education, #skills, #experience, .avatar, .socialLinks {
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+
+
+.name {
+  font-family: 'Permanent Marker', Georg;
+  margin-bottom:0;
+  line-height:40px;
+}
+
+.jobTitle {
+  margin-bottom:5px;
+}
+.name, .jobTitle, .avatar, .socialLinks {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+.container {
+  background-color: rgb(255, 247, 247);
+  background-image: url("img/logo1.png");
+  background-origin: content-box;
+  padding: 5px;
+  
+}
+.socialLinks {
+  padding:5px 5px 0;
+}
+.socialLinks a > img {
+  width:25px;
+  
+}
+.socialLinks a {
+  margin:0 6px;
+  text-decoration: none;
+  text-align: center;
+  width: 19%;
+  display: inline-block;
+}
+
+
+@media (min-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .container {
+    width: 95%;
+  }
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  background:url(img/logo2.png);
+  font-family: 'Open Sans', sans-serif;
+  overflow:hidden;
+}
+.container {
+  padding-bottom:0;
+  height: calc(100vh - 16px);
+  overflow: hidden;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+.sectionTitle {
+  font-size:24px;
+  font-weight:bold;
+  line-height:24px;
+  color:#480564;
+  padding-bottom:5px;
+  border-bottom:2px dashed #08000e;
+  margin-bottom:5px;
+}
+.svgIcon {
+  padding-right:5px;
+}
+.no-m-l {
+  margin-left:0;
+}
+#education, #experience {
+  margin-bottom:15px;
+}
+#education .columns, #experience .columns {
+  margin-top:15px;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+a.pulse::hover img {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
