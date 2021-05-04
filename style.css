@@ -1,0 +1,9 @@
+#header {
+  position: fixed;
+  background: none;
+  z-index:5;
+}
+
+.headerContent {
+  
+}
